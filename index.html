@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- fontawesome -->
+    <script
+            src="https://kit.fontawesome.com/c4ecdd0437.js"
+            crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kantumruy+Pro&family=Playfair+Display:wght@500&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Sora&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kantumruy+Pro&family=Playfair+Display:wght@500&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Sora&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/fav_icon.png"/>
+    <title>TODO</title>
+</head>
+<body>
+<div id="container">
+    <div class="colors-holder"></div>
+    <h1>
+        <div class="t-d">
+            <div class="t">
+                T
+                <div class="d">D</div>
+            </div>
+        </div>
+        <div class="o">O</div>
+    </h1>
+    <!-- add new task -->
+    <div id="form-container">
+        <form action="" name="new-task-form">
+            <!-- task title -->
+            <input type="text" placeholder="Title" name="title" id="title"/>
+            <!-- task body -->
+            <input
+                    type="text"
+                    name="body"
+                    placeholder="..."
+                    id="body"
+                    cols="50"
+                    rows="20"
+            />
+            <!-- task completed -->
+            <div>
+                <label for="completed">Completed</label>
+                <input type="checkbox" id="completed"/>
+            </div>
+            <!-- submit -->
+            <input type="submit" value="Save"/>
+        </form>
+    </div>
+
+    <!-- view tasks -->
+    <div id="total-tasks"></div>
+    <div id="tasks-displayer"></div>
+</div>
+
+<div>
+
+</div>
+<script src="app.js" type="module"></script>
+</body>
+</html>
